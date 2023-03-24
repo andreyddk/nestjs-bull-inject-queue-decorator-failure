@@ -1,0 +1,31 @@
+{
+  "name": "nestjs-bull-inject-queue-decorator-failure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "clean": "rimraf ./build",
+    "rebuild": "npm run clean && npm run build",
+    "watch": "tsc-watch --noClear --onSuccess 'npm run start'",
+    "start": "node ./build/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^4.4.1",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "@nestjs/bull": "^0.6.3",
+    "@nestjs/common": "^9.3.12",
+    "@nestjs/core": "^9.3.12",
+    "@nestjs/platform-express": "^9.3.12",
+    "bull": "^4.10.4",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
+  }
+}
